@@ -1,0 +1,105 @@
+<h3 class="kTitle">Détail d'une licence</h3>
+<div class="container">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" >
+    <input type="hidden" formControlName="id"  />
+    <input type="hidden" formControlName="dateCreation"/>
+    <input type="hidden" formControlName="dateModification" />
+    <input type="hidden" formControlName="isDeleted"  />
+    <input type="hidden" formControlName="suppressorId" />
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
+          <label>Indicatif</label>
+          <input formControlName="indicatif" class="form-control" />
+
+        </div>
+      </div>
+
+    </div>
+
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Nom</label>
+          <input formControlName="nom" class="form-control" />
+
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Prénom</label>
+          <input formControlName="prenom" class="form-control" />
+        </div>
+
+      </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Adresse 1</label>
+          <input formControlName="adresse1"  class="form-control">
+
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Adresse 2</label>
+          <input formControlName="adresse2"  class="form-control" >
+        </div>
+      </div>
+    </div>
+
+    <!--Code postal-->
+    <div class="row">
+      <div class="col-md-4">
+        <div class="form-group-sm">
+          <label>Code postal</label>
+          <input formControlName="codePostal" class="form-control" />
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="form-group">
+          <label>Ville</label>
+          <input formControlName="ville"  class="form-control" />
+
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label>Qra Locator</label>
+          <input formControlName="qraLocator"  class="form-control" />
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Email</label>
+          <input formControlName="email"  class="form-control" />
+
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="form-group">
+          <label>Site web</label>
+          <input formControlName="webSite"  class="form-control"  />
+
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <p class="lead" *ngIf="isLoading">En cours de chargement</p>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" [disabled]="!form.valid" class="btn btn-dark kBTNSave"><span class="fa fa-database"></span> Sauver</button>
+      <button type="button" class="btn btn-outline-dark ml-1 kBTNCloseDetail" (click)="close()"><span class="fa fa-close"></span>Annuler </button>
+    </div>
+  </form>
+</div>
+

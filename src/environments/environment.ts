@@ -1,16 +1,20 @@
-// This file can be replaced during build by using the `fileReplacements` array.
-// `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
-// The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+
+  apiUrl: 'https://localhost:5001/api/',
+
+  // apiUrl: 'http://arram-api.atlas-flotte.com/api/',
+  urlPhoto: 'http://backend-arram.atlas-flotte.com/',
+  loginUrl: '/login',
+  tokenUrl: null,
+  latitude: 47.589714333333
+  , longitude: 1.359242166667
+  , maxTrace: 500
+  , amanaUrl: 'http://localhost:5000'
+  , clientSecret: 'monbonsecret'
+  , fallbackBaseUrl: 'http://arram-api.atlas-flotte.com'
+  , scope: 'arram_web_api'
+  , clientId: 'ro.client'
 };
 
-/*
- * For easier debugging in development mode, you can import the following file
- * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
- *
- * This import should be commented out in production mode because it will have a negative impact
- * on performance if an error is thrown.
- */
-// import 'zone.js/dist/zone-error';  // Included with Angular CLI.
