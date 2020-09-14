@@ -8,6 +8,8 @@ import { ToastOptions, ToastaService } from 'ngx-toasta';
 import { Licence } from 'src/app/models/Licence.model';
 
 import { LicenceService } from 'src/app/services/licence.service';
+import { Photo } from 'src/app/models/photo.model';
+import { environment } from 'src/environments/environment';
 
 
 @Component(
@@ -22,7 +24,9 @@ export class LicenceDetailComponent implements OnInit, OnDestroy {
 
   isLoading = false;
   submitted = false;
+  rootUrlPhoto = environment.urlPhoto;
   entite: Licence;
+  public photos: Photo[];
 
   toastOptions: ToastOptions = {
     title: 'Licence',
@@ -102,6 +106,7 @@ export class LicenceDetailComponent implements OnInit, OnDestroy {
         this.toastOptions.msg = 'Radioamateur chargé';
         this.toastService.success(this.toastOptions);
         this.updateForm();
+        this.photos = this.entite.photos;
       },
       error => {
         this.isLoading = false;

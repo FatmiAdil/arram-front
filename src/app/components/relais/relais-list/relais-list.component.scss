@@ -1,0 +1,166 @@
+.entite-table {
+  width: 90%;
+  margin: 0 auto 110px auto;
+}
+
+.kFiltre {
+  background-color: #bbcbe3 !important;
+  color: white !important;
+}
+
+.full-width-table {
+  width: 100%;
+  margin: 0 auto 0px auto;
+}
+
+#filters-container {
+    display: flex;
+    margin-top: 30px;
+}
+
+.mat-form-field {
+  width: 13%;
+  padding: 10px;
+  margin: auto;
+}
+
+.button-row {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.kTitle{
+  width: 90%;
+  height: 50px;
+  background-color:#3b4758;
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  margin-left: 45px;
+}
+th.mat-header-cell {
+  text-align: center !important;
+}
+.mat-cell{
+  color:white;
+}
+
+.mat-header-cell{
+  background-color: rgb(128, 128, 128);
+  color: white;
+
+  flex-direction: column !important;
+  text-align: center !important;
+  justify-content:center !important;
+}
+
+.mat-row{
+  color:white;
+}
+
+.mat-row:nth-child(even){
+  background-color:rgb(138, 138, 138);
+}
+
+.mat-row:nth-child(odd){
+    background-color:rgb(138, 138, 140);
+}
+
+#filters-container {
+    display: flex;
+    margin-top: 30px;
+    background-color: #7286a3;
+    color: white !important;
+
+
+  .mat-label{
+    color:white;
+  }
+
+  .mat-form-field {
+    width: 13%;
+    padding: 10px;
+    margin: auto;
+    color:white;
+  }
+
+}
+
+
+.mat-input-element{
+  background-color: rgb(91, 122, 158);
+}
+
+.mat-input-label{
+  color: white;
+}
+
+.mat-form-field-autofill-control{
+  // background-color: turquoise;
+  color:white !important;
+}
+
+// boutons & icones
+.kBTN{
+  background-color: #012b62 !important;
+  color: white;
+  border-color: #1877f2;
+  height: 50px;
+  margin-left: 45px;
+}
+.kBTN:hover{
+  background-color: #004caf !important;
+  border-color: #529dff;
+}
+
+.mat-sort-header-container {
+  display:flex;
+  justify-content:center;
+}
+
+.kIconEdit{
+  color: #2359a5;
+}
+.kIconEdit:hover{
+  color: #066ecf;
+}
+
+.kIconDel{
+  color: rgb(179, 31, 31);
+}
+.kIconDel:hover{
+  color: rgb(218, 22, 22);
+}
+
+.kTest{
+  background-color: rgb(206, 152, 251);
+  color: yellow;
+}
+
+.mat-form-field-placeholder {
+  color: white !important;
+}
+.kBtnAdd {
+  background-color: rgb(35, 116, 221) !important;
+  color: white !important;
+  margin-top: 80px !important;
+  margin-left: 55px !important;
+}
+.kFiltre {
+  background-color: rgb(94, 94, 94);
+  color: white !important;
+}
+.inputFilter {
+  color: white !important;
+}
+.mat-form-field-nomFilter {
+  color: white !important;
+}
+.mat-input ::placeholder {
+  color: yellow !important;
+}
+.kTable {
+  background-color: rgb(145, 145, 145);
+
+}

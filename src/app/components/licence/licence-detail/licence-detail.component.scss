@@ -1,0 +1,56 @@
+.carousel-control-next {
+  right: -10%;
+}
+.carousel-control-prev {
+  left: -10%;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: black;
+}
+// .ng-valid,
+// .ng-valid.required {
+//   background-color: lightgreen;
+// }
+
+.ng-invalid:not(form) {
+  background-color: lightcoral;
+}
+
+.error-description {
+  color: red;
+}
+
+// boutons add & save
+.kBTNSave{
+  background-color: rgb(0, 216, 0);
+  border-color: rgb(1, 255, 22);
+  margin-bottom: 10px;
+  margin-right: 40px;
+  margin-left: 120px;
+  width: 160px;
+  height: 40px;
+}
+
+.kBTNSave:hover{
+  background-color: rgb(1, 255, 22);
+  border-color: rgb(0, 216, 0);
+}
+
+.kBTNCloseDetail{
+  margin-bottom: 10px;
+  margin-left: 300px;
+  color: white;
+  background-color: rgb(226, 26, 26);
+  border-color: rgb(246, 41, 41);
+
+  width: 160px;
+  height: 40px;
+
+}
+
+.kBTNCloseDetail:hover{
+  background-color: rgb(250, 21, 21);
+  border-color:  rgb(121, 2, 2);
+}

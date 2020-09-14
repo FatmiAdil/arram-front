@@ -5,6 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { ToastaModule } from 'ngx-toasta';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { MatConfirmDialogComponent } from './controls/mat-confirm-dialog/mat-confirm-dialog.component';
@@ -40,6 +41,7 @@ import { LicenceService } from './services/licence.service';
     , ReactiveFormsModule
     , HttpClientModule
     , AppRoutingModule
+    , NgbModule
     , ToastaModule.forRoot()
     , MaterialModule
   ],

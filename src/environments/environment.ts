@@ -5,7 +5,8 @@ export const environment = {
   apiUrl: 'https://localhost:5001/api/',
 
   // apiUrl: 'http://arram-api.atlas-flotte.com/api/',
-  urlPhoto: 'http://backend-arram.atlas-flotte.com/',
+  // urlPhoto: 'http://backend-arram.atlas-flotte.com',
+  urlPhoto: 'http://localhost:5000',
   loginUrl: '/login',
   tokenUrl: null,
   latitude: 47.589714333333

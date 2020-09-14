@@ -1,3 +1,4 @@
+import { Photo } from './photo.model';
 
 export class Licence  extends EntityBase {
   nom: string;
@@ -12,6 +13,7 @@ export class Licence  extends EntityBase {
   webSite: string;
   qraLocator: string;
   anneeLicence: number;
+  photos: Photo[];
 }
 
 export interface LicenceList {
